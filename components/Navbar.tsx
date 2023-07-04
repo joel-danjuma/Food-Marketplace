@@ -9,7 +9,7 @@ function Navbar() {
     <nav className="flex justify-center items-center gap-2 lg:text-lg text-md text-bold uppercase bg-[#EDEAE7] text-green-800 w-full h-12 p-5 relative">
       <div className="absolute left-10">
         <a href="#">
-          <Image src={logo} alt="logo" className="w-4 h-8" />
+          <Image src={logo} alt="logo" className="w-3 h-7" />
         </a>
       </div>
       <div className="flex justify-between gap-4">

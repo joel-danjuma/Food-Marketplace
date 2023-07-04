@@ -2,11 +2,11 @@ import broccoli from "@/public/broccoli.png";
 import carrot from "@/public/carrot.png";
 import dill from "@/public/dill.png";
 
-const random_products = [
+const products = [
   {
     name: "Broccoli",
     description: "Buy fresh broccoli straight from the farm at the best prices",
-    image: broccoli, // Make sure to import the images for each product
+    image: broccoli,
   },
   {
     name: "Carrots",
@@ -20,4 +20,4 @@ const random_products = [
   },
 ];
 
-export default random_products;
+export default products;

@@ -1,8 +1,8 @@
 import Image from "next/image";
-// import broccoli from "@/public/broccoli.png";
-// import carrot from "@/public/carrot.png";
-// import dill from "@/public/dill.png";
-import random_products from "@/utils/random_products";
+import broccoli from "@/public/broccoli.png";
+import carrot from "@/public/carrot.png";
+import dill from "@/public/dill.png";
+import products from "@/utils/products";
 
 const Hero = () => {
   return (
@@ -20,17 +20,19 @@ const Hero = () => {
       </div>
 
       <div className="w-full h-2/5 flex flex-row">
-        {random_products.map((product) => {
+        {products.map((product: any, i: any) => {
           return (
             <div
-              key={product.name}
-              className="bg-[#EDEAE7] flex flex-col items-start w-1/3 h-full p-5 relative"
+              key={i}
+              className="bg-[#d5d2cf] flex flex-col items-start w-1/3 h-full p-5 relative border"
             >
-              <h1 className="font-bold text-2xl text-green-800">Brocoli</h1>
+              <h1 className="font-bold text-2xl text-green-800">
+                {product.name}
+              </h1>
               <p className="py-4 text-xl text-[#928288]">
                 {product.description}
               </p>
-              <button className="rounded-full text-green-800 bg-white p-3 font-bold">
+              <button className="rounded-full text-green-800 bg-[#EDEAE7] p-3 font-bold hover:bg-green-500">
                 Shop Now
               </button>
               <Image
