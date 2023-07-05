@@ -7,8 +7,8 @@ import { MdLocalPhone } from "react-icons/md";
 
 const About = () => {
   return (
-    <section className="flex flex-col  h-full w-full">
-      <div className="w-full h-2/6 flex flex-row justify-center bg-white p-5 z-10">
+    <section className="flex flex-col h-full w-full">
+      <div className="w-full h-2/6 flex flex-row justify-center bg-white lg:z-10 rounded-xl">
         <div className="flex flex-row items-center text-4xl text-black justify-between w-3/5">
           <div className="flex flex-col items-center">
             <LiaShippingFastSolid />
@@ -32,13 +32,17 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="w-full h-4/6 flex flex-row bg-green-200 text-green-800">
-        <Image src={img} alt="vegetable-stall" className="w-1/2 h-full" />
+      <div className="w-full h-4/6 flex flex-row bg-[#EDEAE7] text-green-800 rounded-xl">
+        <Image
+          src={img}
+          alt="vegetable-stall"
+          className="w-1/2 h-full rounded-l-xl"
+        />
         <div className="w-1/2 h-full flex flex-col justify-center items-center p-4">
           <h1 className="pt-3 text-xl">Our Story</h1>
           <h2 className="py-3">
             We Have Partnered with Farmers accross the Nation, To Provide Fresh
-            and Quality Foods For Our Customers{" "}
+            and Quality Foods For Our Customers
           </h2>
           <p className=" text-center pb-3">
             At Gwaree Foods, we are committed to providing you with the freshest

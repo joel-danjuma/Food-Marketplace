@@ -10,7 +10,7 @@ const Categories = () => {
           return (
             <div
               key={i}
-              className="w-56 h-56 bg-[#EDEAE7] flex flex-col justify-center items-center rounded-md"
+              className="w-56 h-56 bg-[#EDEAE7] flex flex-col justify-center items-center rounded-xl transform hover:scale-105 "
             >
               <span>{item.name}</span>
               <Image src={item.image} alt={item.name} />
@@ -18,7 +18,7 @@ const Categories = () => {
           );
         })}
       </div>
-      <div className="flex flex-col items-center bg-[#EDEAE7] h-1/2 w-full p-5">
+      <div className="flex flex-col items-center bg-[#EDEAE7] h-1/2 w-full p-5 rounded-xl">
         <h1 className="text-2xl">Reviews And Testimonials</h1>
       </div>
     </section>

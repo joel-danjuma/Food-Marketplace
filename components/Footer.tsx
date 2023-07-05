@@ -5,7 +5,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer className="w-full h-2/5 flex flex-col items-center">
-      <div className="w-full h-12 bg-green-400 flex justify-between items-center px-52">
+      <div className="w-full h-12 bg-green-400 flex justify-between items-center px-52 rounded-xl">
         <h1>Subscribe Now</h1>
         <div className="rounded-full bg-white text-green-800 w-40 justify-center flex">
           search bar

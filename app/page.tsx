@@ -10,7 +10,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="w-full h-screen block overflow-auto">
+    <main className="w-full h-screen overflow-auto p-5">
       <Navbar />
       <Hero />
       <About />
