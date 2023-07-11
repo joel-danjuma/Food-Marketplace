@@ -1,7 +1,7 @@
 import Image from "next/image";
-import broccoli from "@/public/broccoli.png";
-import carrot from "@/public/carrot.png";
-import dill from "@/public/dill.png";
+// import broccoli from "@/public/broccoli.png";
+// import carrot from "@/public/carrot.png";
+// import dill from "@/public/dill.png";
 import products from "@/utils/products";
 
 const Hero = () => {
@@ -21,7 +21,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="w-full h-2/5 flex lg:flex-row flex-col lg:mt-0 mt-2 justify-between lg:pt-1 gap-1">
+      <div className="w-full h-2/5 flex lg:flex-row flex-col justify-between">
         {products.map((product: any, i: any) => {
           return (
             <div

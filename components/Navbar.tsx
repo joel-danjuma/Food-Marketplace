@@ -9,7 +9,7 @@ function Navbar() {
   return (
     <nav>
       {/* Desktop Navigation */}
-      <div className="hidden lg:flex justify-center items-center text-lg text-bold uppercase bg-white text-green-800 w-full h-12 relative">
+      <div className="hidden lg:flex justify-center items-center text-lg text-bold uppercase bg-white text-green-800 w-full h-12 relative pt-2">
         <div className="absolute left-2">
           <a href="#">
             <Image src={logo} alt="logo" className="w-3 h-7" />
