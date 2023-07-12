@@ -5,17 +5,19 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Categories from "@/components/Categories";
+import Partners from "@/components/Partners";
 import Blog from "@/components/Blog";
 import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="w-full h-screen overflow-auto p-5">
+    <main className="w-full h-screen overflow-y-auto ">
       <Navbar />
       <Hero />
-      <About />
+      {/* <About /> */}
       <Categories />
-      <Blog />
+      <Partners />
+      {/* <Blog /> */}
       <Footer />
     </main>
   );

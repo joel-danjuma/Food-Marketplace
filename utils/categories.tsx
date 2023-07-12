@@ -3,6 +3,7 @@ import vegetables from "@/public/Vegetables.png";
 import peach from "@/public/peach.png";
 import roots from "@/public/yam.png";
 import mushrooms from "@/public/shrooms.png";
+import dill from "@/public/dill.png";
 
 const categories = [
   {
@@ -24,6 +25,10 @@ const categories = [
   {
     name: "Mushrooms",
     image: mushrooms,
+  },
+  {
+    name: "Discount",
+    image: dill,
   },
 ];
 
