@@ -6,6 +6,7 @@ import { FiMenu } from "react-icons/fi";
 import logo from "@/public/logo.png";
 import Image from "next/image";
 import { useState, useEffect } from "react";
+
 function Navbar() {
   const [toggleDropdown, setToggleDropdown] = useState(false);
   return (
@@ -89,20 +90,29 @@ function Navbar() {
       </div>
 
       {/* Mobile Navigation */}
-      <div className="lg:hidden flex flex-row justify-between bg-white p-2 text-[#50d236] w-full h-12 relative">
+      {toggleDropdown && (
+        <div className="absolute top-12 h-screen w-full bg-[#EDEAE7] flex flex-col gap-2 justify-center z-20">
+          <div className="w-full h-2/4 flex flex-col gap-4 pt-4 items-center text-xl">
+            <a href="/">
+              <span>Home</span>
+            </a>
+            <a href="#">
+              <span>Products</span>
+            </a>
+            <a href="#">
+              <span>Contact</span>
+            </a>
+          </div>
+        </div>
+      )}
+      <div className="lg:hidden flex flex-row justify-between bg-[#EDEAE7] p-2 text-[#50d236] w-full h-12 relative">
         <a href="#" className="pl-2">
           <Image src={logo} alt="logo" className="w-3 h-7" />
         </a>
         <button
           className="text-3xl pr-2"
           onClick={() => {
-            return (
-              <div className="w-full h-full bg-[#50d236] text-white flex flex-col py-4 p-2 justify-center text-bold uppercase">
-                <span>Home</span>
-                <span>Products</span>
-                <span>Contact</span>
-              </div>
-            );
+            setToggleDropdown((prev) => !prev);
           }}
         >
           <FiMenu />
