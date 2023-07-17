@@ -90,21 +90,7 @@ function Navbar() {
       </div>
 
       {/* Mobile Navigation */}
-      {toggleDropdown && (
-        <div className="absolute top-12 h-screen w-full bg-[#EDEAE7] flex flex-col gap-2 justify-center z-20">
-          <div className="w-full h-2/4 flex flex-col gap-4 pt-4 items-center text-xl">
-            <a href="/">
-              <span>Home</span>
-            </a>
-            <a href="#">
-              <span>Products</span>
-            </a>
-            <a href="#">
-              <span>Contact</span>
-            </a>
-          </div>
-        </div>
-      )}
+
       <div className="lg:hidden flex flex-row justify-between bg-[#EDEAE7] p-2 text-[#50d236] w-full h-12 relative">
         <a href="#" className="pl-2">
           <Image src={logo} alt="logo" className="w-3 h-7" />
@@ -118,6 +104,21 @@ function Navbar() {
           <FiMenu />
         </button>
       </div>
+      {toggleDropdown && (
+        <div className="absolute h-3/4 w-full bg-[#EDEAE7] flex flex-col gap-2 justify-center z-20 rounded-b-xl drop-shadow-lg ">
+          <div className="w-full h-2/4 flex flex-col gap-4 pt-4 items-center text-xl">
+            <a href="/">
+              <span>Home</span>
+            </a>
+            <a href="#">
+              <span>Products</span>
+            </a>
+            <a href="#">
+              <span>Contact</span>
+            </a>
+          </div>
+        </div>
+      )}
     </nav>
   );
 }

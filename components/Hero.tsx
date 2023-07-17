@@ -1,8 +1,10 @@
+"use client";
 // import broccoli from "@/public/broccoli.png";
 // import carrot from "@/public/carrot.png";
 // import dill from "@/public/dill.png";
-import products from "@/utils/products";
-import Image from "next/image";
+// import products from "@/constants/products";
+// import { getRandomProduct } from "@/utils/getRandomItem.js";
+// import Image from "next/image";
 // import { useState } from "react";
 
 const Hero = () => {
@@ -12,6 +14,8 @@ const Hero = () => {
   //   const product = products.find((product) => product.id === productId);
   //   setSelectedProduct(product as typeof selectedProduct);
   // };
+
+  // const products = [getRandomProduct()];
 
   return (
     <section className="flex flex-col h-3/5 w-full ">
