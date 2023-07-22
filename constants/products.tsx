@@ -7,7 +7,7 @@ const products = [
     title: "All natural",
     description: "Buy fresh fruits straight from the farm",
     image: background_1,
-    background_colour: "#F96893",
+    background_colour: "#ff1493",
   },
   {
     id: 2,

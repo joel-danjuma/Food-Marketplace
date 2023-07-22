@@ -8,15 +8,23 @@ const Categories = () => {
     <section className="flex flex-col items-center bg-white text-green-800 h-screen w-full ">
       <h1 className="text-2xl mt-4 mb-4">Shop By Category</h1>
       <div className="w-full p-4 justify-center items-center flex">
-        <div className="max-w-xl max-h-xl lg:max-w-4xl grid grid-flow-row grid-cols-3 gap-4 justify-center">
+        <div className="max-w-xl max-h-xl lg:max-w-4xl grid grid-flow-row lg:grid-cols-4 grid-cols-2 lg:grid-rows-1 grid-rows-2 gap-4 justify-center">
           {categories.map((item: any, i: any) => {
             return (
               <div
                 key={i}
-                className="bg-[#EDEAE7] flex flex-col justify-center items-center rounded-xl transform hover:scale-105 "
+                className=" flex flex-col justify-center items-center rounded-xl transform hover:scale-105 "
               >
-                <span className="absolute bottom-2">{item.name}</span>
-                <Image src={item.image} alt={item.name} />
+                <div>
+                  <Image
+                    src={item.image}
+                    alt={item.name}
+                    className="object-cover rounded-xl"
+                  />
+                </div>
+                <div className="absolute bottom-0 border rounded-b-xl w-full bg-white flex justify-center">
+                  {item.name}
+                </div>
               </div>
             );
           })}

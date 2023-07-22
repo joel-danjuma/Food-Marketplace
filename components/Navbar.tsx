@@ -53,14 +53,14 @@ function Navbar() {
     // </nav>
     // className="flex-row justify-between w-full items-center flex-grow hidden md:flex md:flex-row md:justify-end md:pb-0"
 
-    <nav className="static w-full top-0 z-30">
+    <nav className="fixed w-full z-30 ">
       <div className="hidden lg:flex flex-row justify-center items-center text-lg font-medium bg-[#F9F8F8] text-green-500 w-full h-14 relative">
         {/* Desktop Navigation */}
         <a
           href="#"
           className=" absolute left-5 flex flex-row justify-between gap-4"
         >
-          <Image src={logo} alt="logo" className="w-3 h-7" />
+          <Image src={logo} alt="logo" className="w-3 h-7 lg:hidden" />
           <h1 className="text-green-500 lg:block hidden">Gwaree</h1>
         </a>
 
@@ -100,6 +100,7 @@ function Navbar() {
         <a href="#" className="pl-2">
           <Image src={logo} alt="logo" className="w-3 h-7" />
         </a>
+
         <button
           className="text-3xl pr-2"
           onClick={() => {

@@ -1,14 +1,14 @@
-import spices from "@/public/spices-png-43503.png";
-import vegetables from "@/public/Vegetables.png";
-import peach from "@/public/peach.png";
-import roots from "@/public/yam.png";
-import mushrooms from "@/public/shrooms.png";
-import dill from "@/public/dill.png";
+import spices from "@/public/mockup-graphics-oAJ8q-cb1dg-unsplash.jpg";
+import vegetables from "@/public/bayLeaf.svg";
+import fruit from "@/public/rasberry.svg";
+import roots from "@/public/carrot.svg";
+import mushrooms from "@/public/shroom-2.jpg";
+import tomato from "@/public/tomato.svg";
 
 const categories = [
   {
     name: "Fruits",
-    image: peach,
+    image: fruit,
   },
   {
     name: "Vegetables",
@@ -28,7 +28,7 @@ const categories = [
   },
   {
     name: "Discount",
-    image: dill,
+    image: tomato,
   },
 ];
 

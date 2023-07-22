@@ -55,19 +55,13 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="w-full h-2/5 grid grid-flow-row grid-cols-2 pt-4 gap-4">
+      <div className="w-full h-2/5 grid grid-flow-row grid-cols-2 p-4 gap-4">
         {products.map((product: any, i: any) => {
           return (
             <div
               key={i}
-              className={`relative bg-no-repeat bg-cover flex flex-col w-full h-full p-5 justify-center items-center border rounded-xl`}
+              className={`bg-[#D4D4D4]  relative bg-no-repeat bg-cover flex flex-col w-full h-full p-5 justify-center items-center border rounded-xl`}
             >
-              <Image
-                src={product.image}
-                alt=""
-                className="w-max absolute bottom-0 left-0 z-0"
-              />
-
               <h1 className="font-bold lg:text-2xl text-lg text-green-800 z-10">
                 {product.title}
               </h1>
