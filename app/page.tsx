@@ -1,7 +1,7 @@
 "use client";
 // import { discount_items } from "@/utils/discount_items";
 // import Discount_card from "@/components/Discount_card";
-import Navbar from "@/components/Navbar";
+
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Categories from "@/components/Categories";
@@ -12,12 +12,11 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <main className="w-full h-screen overflow-y-auto ">
-      <Navbar />
       <Hero />
-      {/* <About /> */}
+      <About />
       <Categories />
       <Partners />
-      {/* <Blog /> */}
+      <Blog />
       <Footer />
     </main>
   );

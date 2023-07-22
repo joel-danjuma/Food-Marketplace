@@ -2,10 +2,18 @@
 // import broccoli from "@/public/broccoli.png";
 // import carrot from "@/public/carrot.png";
 // import dill from "@/public/dill.png";
-// import products from "@/constants/products";
+import products from "@/constants/products";
 // import { getRandomProduct } from "@/utils/getRandomItem.js";
-// import Image from "next/image";
+import Image from "next/image";
 // import { useState } from "react";
+import background_1 from "@/public/product-background.svg";
+import background_2 from "@/public/product-background2.svg";
+import strawberry from "@/public/strawberry.svg";
+import bigLeaf from "@/public/bigLeaf.svg";
+import bigLeaf2 from "@/public/bigLeaf2.svg";
+import leaf from "@/public/leaf.svg";
+import smallLeaf from "@/public/smallLeaf.svg";
+import onion from "@/public/onion.svg";
 
 const Hero = () => {
   // const [selectedProduct, setSelectedProduct] = useState(products[0]);
@@ -16,12 +24,26 @@ const Hero = () => {
   // };
 
   // const products = [getRandomProduct()];
+  let img;
 
   return (
-    <section className="flex flex-col h-3/5 w-full ">
-      <div className="bg-[url('../public/chantal-garnier-910GanwBoew-unsplash.jpg')] bg-no-repeat bg-cover bg-opacity-10 w-full h-full lg:pb-0 text-white ">
-        <div className="bg-black w-full h-full bg-opacity-30 flex flex-col justify-center items-center">
-          <h1 className="lg:text-7xl text-2xl text-center">
+    <section className="flex flex-col h-full w-full relative ">
+      <div
+        className={`bg-[#7EB693] w-full h-4/5 lg:pb-0 text-[#274C5B] relative`}
+      >
+        <Image
+          src={bigLeaf}
+          alt=""
+          className="absolute bottom-0 left-0 lg:w-[311px] w-44 text-black"
+        ></Image>
+        <Image
+          src={bigLeaf2}
+          alt=""
+          className="absolute top-0 right-0 lg:w-[222px] w-[120px] z-0 transform"
+        />
+
+        <div className="bg-black bg-opacity-10 w-full h-full flex flex-col justify-center items-center">
+          <h1 className="lg:text-7xl text-2xl text-center z-10">
             Vegetables 100% Organic
           </h1>
           <p className="lg:text-xl text-center py-7">
@@ -33,31 +55,38 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* <div className="w-full h-2/5 flex lg:flex-row flex-col justify-between pt-1 gap-1">
+      <div className="w-full h-2/5 grid grid-flow-row grid-cols-2 pt-4 gap-4">
         {products.map((product: any, i: any) => {
           return (
             <div
               key={i}
-              className="bg-[#d5d2cf] flex flex-col items-start lg:w-1/3 w-full h-full p-5 relative lg:border rounded-xl"
+              className={`relative bg-no-repeat bg-cover flex flex-col w-full h-full p-5 justify-center items-center border rounded-xl`}
             >
-              <h1 className="font-bold lg:text-2xl text-xl text-green-800">
-                {product.name}
-              </h1>
-              <p className="py-4 lg:text-xl text-lg text-[#928288]">
-                {product.description}
-              </p>
-              <button className="rounded-full text-green-800 bg-[#EDEAE7] lg:p-3 p-2 font-bold hover:bg-green-500">
-                Shop Now
-              </button>
               <Image
                 src={product.image}
-                alt="broccoli"
-                className="lg:w-24 lg:h-24 w-20 h-20 absolute right-0 -bottom-0 z-0"
+                alt=""
+                className="w-max absolute bottom-0 left-0 z-0"
               />
+
+              <h1 className="font-bold lg:text-2xl text-lg text-green-800 z-10">
+                {product.title}
+              </h1>
+              <p className="py-4 lg:text-xl text-md text-[#928288] text-justify z-10">
+                {product.description}
+              </p>
+              <button className="absolute bottom-0 rounded-full text-green-800 lg:p-3 p-2 font-bold hover:text-green-500 z-10">
+                Shop Now
+              </button>
+
+              {/* <Image
+                src={product.image}
+                alt={product.name}
+                className="lg:w-24 lg:h-24 w-20 h-20 absolute right-0 -bottom-0 z-0"
+              /> */}
             </div>
           );
         })}
-      </div> */}
+      </div>
     </section>
     // <section>
     //   <section className="items-center justify-center bg-[#141521] flex h-screen">

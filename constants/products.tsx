@@ -1,25 +1,20 @@
-import broccoli from "@/public/broccoli.png";
-import carrot from "@/public/carrot.png";
-import dill from "@/public/dill.png";
+import background_1 from "@/public/Vegetables.png";
+import background_2 from "../public/product-background2.svg";
 
 const products = [
   {
     id: 1,
-    name: "Broccoli",
-    description: "Buy fresh broccoli straight from the farm at the best prices",
-    image: broccoli,
+    title: "All natural",
+    description: "Buy fresh fruits straight from the farm",
+    image: background_1,
+    background_colour: "#F96893",
   },
   {
     id: 2,
-    name: "Carrots",
-    description: "Buy fresh carrots straight from the farm at the best prices",
-    image: carrot,
-  },
-  {
-    id: 3,
-    name: "Dill",
-    description: "Buy fresh dill straight from the farm at the best prices",
-    image: dill,
+    title: "Get the best prices",
+    description: "Get 10% off all green vegeatbles",
+    image: background_2,
+    background_colour: "#E6E7E9",
   },
 ];
 

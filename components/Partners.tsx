@@ -3,7 +3,7 @@ import Image from "next/image";
 const Partners = () => {
   return (
     <section>
-      <div className="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-16 max-w-7xl">
+      <div className="items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-16 max-w-7xl">
         <div className="px-4 pb-12 mx-auto">
           <div className="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-6 lg:mt-8">
             <div className="flex justify-center col-span-1 px-8">

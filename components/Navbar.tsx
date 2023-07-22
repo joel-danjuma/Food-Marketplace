@@ -53,12 +53,17 @@ function Navbar() {
     // </nav>
     // className="flex-row justify-between w-full items-center flex-grow hidden md:flex md:flex-row md:justify-end md:pb-0"
 
-    <nav>
-      <div className="hidden lg:flex flex-row justify-center items-center text-lg font-medium bg-white text-green-500 w-full h-14 relative">
+    <nav className="static w-full top-0 z-30">
+      <div className="hidden lg:flex flex-row justify-center items-center text-lg font-medium bg-[#F9F8F8] text-green-500 w-full h-14 relative">
         {/* Desktop Navigation */}
-        <a href="#" className=" absolute left-5">
+        <a
+          href="#"
+          className=" absolute left-5 flex flex-row justify-between gap-4"
+        >
           <Image src={logo} alt="logo" className="w-3 h-7" />
+          <h1 className="text-green-500 lg:block hidden">Gwaree</h1>
         </a>
+
         <div>
           <a
             href="#"
@@ -105,7 +110,7 @@ function Navbar() {
         </button>
       </div>
       {toggleDropdown && (
-        <div className="absolute h-3/4 w-full bg-[#EDEAE7] flex flex-col gap-2 justify-center z-20 rounded-b-xl drop-shadow-lg ">
+        <div className="h-3/4 w-full bg-[#EDEAE7] flex flex-col gap-2 justify-center z-20 rounded-b-xl drop-shadow-lg ">
           <div className="w-full h-2/4 flex flex-col gap-4 pt-4 items-center text-xl">
             <a href="/">
               <span>Home</span>
