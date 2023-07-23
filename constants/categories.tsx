@@ -1,9 +1,9 @@
-import spices from "@/public/mockup-graphics-oAJ8q-cb1dg-unsplash.jpg";
-import vegetables from "@/public/bayLeaf.svg";
+import spices from "@/public/bayLeaf.svg";
+import vegetables from "@/public/tomato.svg";
 import fruit from "@/public/rasberry.svg";
 import roots from "@/public/carrot.svg";
-import mushrooms from "@/public/shroom-2.jpg";
-import tomato from "@/public/tomato.svg";
+import mushrooms from "@/public/shroom.svg";
+import greens from "@/public/greens.svg";
 
 const categories = [
   {
@@ -22,14 +22,14 @@ const categories = [
     name: "Roots",
     image: roots,
   },
-  {
-    name: "Mushrooms",
-    image: mushrooms,
-  },
-  {
-    name: "Discount",
-    image: tomato,
-  },
+  // {
+  //   name: "Mushrooms",
+  //   image: mushrooms,
+  // },
+  // {
+  //   name: "Discount",
+  //   image: greens,
+  // },
 ];
 
 export default categories;

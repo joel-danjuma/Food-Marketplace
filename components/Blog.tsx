@@ -2,9 +2,9 @@ import React from "react";
 
 const Blog = () => {
   return (
-    <section className="flex flex-col w-full h-3/5 bg-[#F9F8F8]">
-      <div className="w-full h-full flex items-center justify-center">
-        <h1 className="text-green-800 font-bold text-4xl">Blog</h1>
+    <section>
+      <div className="flex flex-col w-full h-full bg-[#F9F8F8] items-center">
+        <h1 className="text-green-800 font-bold text-4xl h-full">Blog</h1>
       </div>
     </section>
   );
