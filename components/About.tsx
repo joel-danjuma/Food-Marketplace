@@ -1,4 +1,4 @@
-import img from "public/mae-mu-s6S8IgEN6-4-unsplash.jpg";
+import img from "@/public/mae-mu-s6S8IgEN6-4-unsplash.jpg";
 import Image from "next/image";
 import { SlCalender } from "react-icons/sl";
 import { MdLocalPhone } from "react-icons/md";
