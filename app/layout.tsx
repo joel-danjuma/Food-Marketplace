@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import { Poppins } from "next/font/google";
 
 export const metadata = {
-  title: "Gwaree",
+  title: "Gwari",
   description: "Fresh Food Delivered from Farm to Table",
 };
 

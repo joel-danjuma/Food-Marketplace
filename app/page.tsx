@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main className="w-full h-screen overflow-y-auto ">
       <Hero />
-      <About />
+      {/* <About /> */}
       <Categories />
       <Partners />
       <Blog />
