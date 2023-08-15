@@ -6,7 +6,7 @@ import orange from "../public/orange.svg";
 const Categories = () => {
   return (
     <section>
-      <div className="flex flex-col items-center bg-white text-green-800 h-full w-full ">
+      <div className="flex flex-col items-center text-green-800 h-full w-full ">
         <h1 className="text-2xl mt-4 mb-4">Shop By Category</h1>
         <div className="w-full p-4 justify-center items-center flex">
           <div className="max-w-lg max-h-xl lg:max-w-6xl grid lg:grid-cols-4 lg:grid-rows-1 grid-rows-2 grid-cols-2 gap-4">
@@ -34,7 +34,7 @@ const Categories = () => {
         </div>
       </div>
 
-      <section className="flex flex-col items-center bg-[#F9F8F8] h-full w-full mt-4">
+      <div className="flex flex-col items-center bg-[#F9F8F8] h-full w-full mt-4">
         <h1 className="text-2xl pt-4">Reviews</h1>
 
         <div className="px-4 mx-auto max-w-7xl flex items-center h-full ">
@@ -56,7 +56,7 @@ const Categories = () => {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </section>
   );
 };

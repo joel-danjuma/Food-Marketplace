@@ -53,7 +53,7 @@ const Footer = () => {
     //   </div>
     // </footer>
 
-    <footer className="bg-[#EDEAE7]" aria-labelledby="footer-heading">
+    <footer className="bg-[#EDEAE7] w-full" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>

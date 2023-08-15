@@ -1,20 +1,61 @@
-import background_1 from "../public/lemon_2.svg";
-import background_2 from "../public/lemon.svg";
+import img from "../public/tomato.svg";
 
 const products = [
   {
     id: 1,
-    title: "All natural",
-    description: "Get Garden Fresh Fruits",
-    image: "public/lemon_2.svg",
-    background_colour: "#ff1493",
+    image: img,
+    title: "Tomatoes",
+    price: "285",
+    category: "Vegetable",
   },
   {
     id: 2,
-    title: "Get the best prices",
-    description: "Get 10% off all green vegeatbles",
-    image: "public/lemon.svg",
-    background_colour: "#E6E7E9",
+    image: img,
+    title: "Avocado",
+    price: "210",
+    category: "Fruit",
+  },
+  {
+    id: 3,
+    image: img,
+    title: "Beetroot",
+    price: "200",
+    category: "Root",
+  },
+  {
+    id: 4,
+    image: img,
+    title: "Bok Choy",
+    price: "230",
+    category: "Vegetable",
+  },
+  {
+    id: 5,
+    image: img,
+    title: "Broccoli",
+    price: "220",
+    category: "Vegetable",
+  },
+  {
+    id: 6,
+    image: img,
+    title: "Purple Cabbage",
+    price: "212",
+    category: "Vegetable",
+  },
+  {
+    id: 7,
+    image: img,
+    title: "Green Cabbage",
+    price: "245",
+    category: "Vegetable",
+  },
+  {
+    id: 8,
+    image: img,
+    title: "Carrot",
+    price: "210",
+    category: "Root",
   },
 ];
 

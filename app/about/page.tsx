@@ -2,11 +2,13 @@
 
 import Image from "next/image";
 import salad from "@/public/salad_bowl.svg";
+import About from "@/components/About";
 
 const about = () => {
   return (
     <section>
-      <div
+      <About />
+      {/* <div
         className={`bg-[#E3F1E9] bg-no-repeat bg-cover flex justify-center w-full min-h-1/4 pt-14`}
       >
         SOME IMAGE
@@ -17,7 +19,7 @@ const about = () => {
           <h3>About us</h3>
           <h1>We are High Achievers for Food Quality at the best Price</h1>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

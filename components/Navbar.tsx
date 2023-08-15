@@ -16,7 +16,7 @@ function Navbar() {
           className=" absolute left-5 flex flex-row justify-between gap-4"
         >
           <Image src={logo} alt="logo" className="w-3 h-7 lg:hidden" />
-          <h1 className="text-green-500 lg:block hidden">Gwari</h1>
+          <h1 className="text-green-500 lg:block hidden">Gwaree</h1>
         </a>
 
         <div>
@@ -52,7 +52,13 @@ function Navbar() {
       {/* Mobile Navigation */}
 
       <div className="lg:hidden flex flex-row justify-between bg-[#EDEAE7] p-2 text-[#50d236] w-full h-12 relative">
-        <Link href="/" className="pl-2">
+        <Link
+          href="/"
+          className="pl-2"
+          onClick={() => {
+            setToggleDropdown(false);
+          }}
+        >
           <Image src={logo} alt="logo" className="w-3 h-7" />
         </Link>
 
@@ -66,15 +72,15 @@ function Navbar() {
         </button>
       </div>
       {toggleDropdown && (
-        <div className="h-[70vh] w-full bg-[#EDEAE7] flex flex-col gap-2 justify-center z-20 rounded-b-xl drop-shadow-lg ">
+        <div className="h-[70vh] w-full bg-[#EDEAE7] flex flex-col gap-2 justify-center z-20 rounded-b-xl ">
           <div className="w-full h-2/4 flex flex-col gap-4 pt-4 items-center text-xl">
             <Link
-              href="/"
+              href="/about"
               onClick={() => {
                 setToggleDropdown(false);
               }}
             >
-              <span>Home</span>
+              <span>About</span>
             </Link>
             <Link
               href="/shop"

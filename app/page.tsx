@@ -4,6 +4,7 @@
 
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import Features from "@/components/Features";
 import Categories from "@/components/Categories";
 import Partners from "@/components/Partners";
 import Blog from "@/components/Blog";
@@ -14,6 +15,7 @@ export default function Home() {
     <main className="w-full h-screen overflow-y-auto ">
       <Hero />
       {/* <About /> */}
+      <Features />
       <Categories />
       <Partners />
       <Blog />

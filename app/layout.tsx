@@ -1,9 +1,10 @@
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import { Poppins } from "next/font/google";
 
 export const metadata = {
-  title: "Gwari",
+  title: "Gwaree",
   description: "Fresh Food Delivered from Farm to Table",
 };
 
@@ -19,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`text-red-500 ${poppins.className}`}>
+      <body className={`${poppins.className}`}>
         <Navbar />
         <main className="bg-white">{children}</main>
       </body>
