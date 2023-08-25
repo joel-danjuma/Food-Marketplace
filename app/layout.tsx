@@ -1,6 +1,6 @@
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import { ClerkProvider } from "@clerk/nextjs";
 import { Poppins } from "next/font/google";
 
 export const metadata = {
@@ -19,11 +19,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`${poppins.className}`}>
-        <Navbar />
-        <main className="bg-white">{children}</main>
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en">
+        <body className={`${poppins.className}`}>
+          <Navbar />
+          <main className="bg-white">{children}</main>
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }

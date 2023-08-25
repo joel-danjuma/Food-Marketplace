@@ -4,8 +4,10 @@ import { FiMenu } from "react-icons/fi";
 import logo from "@/public/logo.png";
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import { SignInButton, SignedIn, UserButton, useSession } from "@clerk/nextjs";
 
 function Navbar() {
+  const { session } = useSession();
   const [toggleDropdown, setToggleDropdown] = useState(false);
   return (
     <nav className="fixed w-full z-30 ">
@@ -39,14 +41,25 @@ function Navbar() {
             Contact
           </Link>
         </div>
-        <div className="flex flex-row absolute right-5">
-          <button className="block px-4 py-2 mt-2 text-sm  hover:text-[#50d236] focus:outline-none focus:shadow-outline md:mt-0">
-            Sign In
-          </button>
-          <button className="text-green-500 hover:bg-[#50d236] hover:text-white hover:rounded-xl p-2 text-sm py-2">
+        {session?.user ? (
+          <div className="flex flex-row absolute right-5">
+            <SignedIn>
+              <UserButton afterSignOutUrl="/" />
+            </SignedIn>
+          </div>
+        ) : (
+          <div className="flex flex-row absolute right-5">
+            <SignInButton mode="modal">
+              <button className="block px-4 py-2 mt-2 text-sm  hover:text-[#50d236] focus:outline-none focus:shadow-outline md:mt-0">
+                Sign In
+              </button>
+            </SignInButton>
+
+            {/* <button className="text-green-500 hover:bg-[#50d236] hover:text-white hover:rounded-xl p-2 text-sm py-2">
             Sign Up
-          </button>
-        </div>
+          </button> */}
+          </div>
+        )}
       </div>
 
       {/* Mobile Navigation */}
