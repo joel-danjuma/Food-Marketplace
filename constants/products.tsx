@@ -1,6 +1,6 @@
 import img from "../public/tomato.svg";
 
-const products = [
+export const products = [
   {
     id: 1,
     image: img,
@@ -59,4 +59,4 @@ const products = [
   },
 ];
 
-export default products;
+export type Products = typeof products;

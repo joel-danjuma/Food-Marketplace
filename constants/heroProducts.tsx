@@ -1,7 +1,7 @@
 import background_1 from "../public/lemon_2.svg";
 import background_2 from "../public/lemon.svg";
 
-const products = [
+export const products = [
   {
     id: 1,
     title: "All natural",
@@ -18,4 +18,4 @@ const products = [
   },
 ];
 
-export default products;
+export type Products = typeof products;

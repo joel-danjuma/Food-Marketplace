@@ -3,7 +3,7 @@
 import Image from "next/image";
 
 import bigLeaf from "@/public/bigLeaf.svg";
-import products from "@/constants/heroProducts";
+import { products } from "@/constants/heroProducts";
 import bigLeaf2 from "@/public/bigLeaf2.svg";
 
 const Hero = () => {

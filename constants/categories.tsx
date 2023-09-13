@@ -5,7 +5,7 @@ import roots from "@/public/carrot.svg";
 import mushrooms from "@/public/shroom.svg";
 import greens from "@/public/greens.svg";
 
-const categories = [
+export const categories = [
   {
     name: "Fruits",
     image: fruit,
@@ -32,4 +32,4 @@ const categories = [
   // },
 ];
 
-export default categories;
+export type Categories = typeof categories;

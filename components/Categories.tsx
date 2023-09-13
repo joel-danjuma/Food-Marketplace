@@ -1,5 +1,5 @@
 import Image from "next/image";
-import categories from "@/constants/categories";
+import { categories } from "@/constants/categories";
 import leaf from "../public/leaf.svg";
 import orange from "../public/orange.svg";
 

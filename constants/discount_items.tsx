@@ -1,7 +1,7 @@
 import broccoli from "../public/broccoli.png";
 import dill from "../public/dill.png";
 import carrot from "../public/carrot.png";
-const discount_items = [
+export const discount_items = [
   {
     name: "broccoli",
     image: broccoli,
@@ -16,4 +16,4 @@ const discount_items = [
   },
 ];
 
-export { discount_items };
+export type Discount_items = typeof discount_items;
