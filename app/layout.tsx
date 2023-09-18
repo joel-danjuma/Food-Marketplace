@@ -2,6 +2,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Poppins } from "next/font/google";
+import { Providers } from "./providers";
 
 export const metadata = {
   title: "Gwaree",
@@ -22,8 +23,10 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
         <body className={`${poppins.className}`}>
-          <Navbar />
-          <main className="bg-white">{children}</main>
+          <Providers>
+            <Navbar />
+            <main className="bg-white">{children}</main>
+          </Providers>
         </body>
       </html>
     </ClerkProvider>
