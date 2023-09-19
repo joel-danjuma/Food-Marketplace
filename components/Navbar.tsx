@@ -47,12 +47,7 @@ function Navbar() {
   );
 
   return (
-    <NextUINavbar
-      maxWidth="full"
-      position="sticky"
-      isBordered
-      className="bg-[#EDEAE7] p-4"
-    >
+    <NextUINavbar maxWidth="full" position="sticky" isBordered className="p-2">
       <NavbarContent
         className="basis-1/5 sm:basis-full relative"
         justify="start"
@@ -82,8 +77,8 @@ function Navbar() {
     </NavbarContent> */}
 
       <NavbarContent className="basis-1 pl-4" justify="end">
-        <ThemeSwitch className="text-green-500" />
-        <NavbarMenuToggle className="text-black" />
+        <ThemeSwitch />
+        <NavbarMenuToggle />
       </NavbarContent>
 
       <NavbarMenu className="lg:flex flex pt-12 ">
@@ -103,7 +98,6 @@ function Navbar() {
                     : "foreground"
                 }
                 href="#"
-                // size="lg"
               >
                 {item.label}
               </Link>

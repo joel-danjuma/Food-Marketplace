@@ -1,18 +1,18 @@
 "use client";
 
-import Image from "next/image";
-
-import bigLeaf from "@/public/bigLeaf.svg";
+// import Image from "next/image";
+// import bigLeaf from "@/public/bigLeaf.svg";
+// import bigLeaf2 from "@/public/bigLeaf2.svg";
 import { products } from "@/constants/heroProducts";
-import bigLeaf2 from "@/public/bigLeaf2.svg";
+import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/react";
 
 const Hero = () => {
   return (
-    <section className="flex flex-col h-full w-full relative ">
+    <section className="flex flex-col h-full w-full relative p-4 ">
       <div
-        className={`bg-gradient-to-br from-[#a8ff78] to-[#11FFBD] w-full h-4/5`}
+        className={`bg-gradient-to-br from-[#a8ff78] to-[#11FFBD] w-full h-3/5 rounded-xl`}
       >
-        <div className="w-full h-full bg-black bg-opacity-10">
+        <Card className="w-full h-full bg-black bg-opacity-10">
           <div className="text-white  w-full h-full flex flex-col justify-center items-center space-y-5">
             <h1 className="lg:text-7xl md:text-5xl text-xl text-center z-10 ">
               Organic Fruits & Vegetables
@@ -24,10 +24,10 @@ const Hero = () => {
               Learn More
             </button>
           </div>
-        </div>
+        </Card>
       </div>
 
-      <div className="w-full h-2/5 grid grid-flow-row grid-cols-2 p-4 gap-4 bg-[#F9F8F8]">
+      <div className="w-full h-2/5 grid grid-flow-row grid-cols-2 gap-4 pt-4 ">
         {products.map((product: any, i: any) => {
           return (
             <div

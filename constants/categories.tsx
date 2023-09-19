@@ -22,14 +22,14 @@ export const categories = [
     name: "Roots",
     image: roots,
   },
-  // {
-  //   name: "Mushrooms",
-  //   image: mushrooms,
-  // },
-  // {
-  //   name: "Discount",
-  //   image: greens,
-  // },
+  {
+    name: "Mushrooms",
+    image: mushrooms,
+  },
+  {
+    name: "Discount",
+    image: greens,
+  },
 ];
 
 export type Categories = typeof categories;

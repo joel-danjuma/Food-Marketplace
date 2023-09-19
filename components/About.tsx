@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section>
       <div className="w-full h-[100vh]"></div>
-      <div className="w-full absolute lg:top-14 top-12 flex lg:flex-row flex-col bg-[#F9F8F8] text-green-800">
+      <div className="w-full absolute lg:top-14 top-12 flex lg:flex-row flex-col text-green-800">
         <div className="lg:w-1/2 h-1/2 w-full">
           <Image
             src={img}
