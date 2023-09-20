@@ -1,20 +1,21 @@
 import Image from "next/image";
 import { categories } from "@/constants/categories";
+import { Card, CardFooter } from "@nextui-org/react";
 import leaf from "../public/leaf.svg";
 import orange from "../public/orange.svg";
 
 const Categories = () => {
   return (
     <section>
-      <div className="flex flex-col items-center text-green-800 h-full w-full ">
+      <div className="flex flex-col items-center text-green-800 h-full w-full pt-8 ">
         <h1 className="text-2xl mt-4 mb-4">Shop By Category</h1>
         <div className="w-full p-4 justify-center items-center flex">
-          <div className="max-w-lg max-h-xl lg:max-w-6xl grid lg:grid-cols-4 lg:grid-rows-1 grid-rows-2 grid-cols-2 gap-4">
+          <div className="max-w-xl max-h-xl lg:max-w-6xl grid lg:grid-cols-6 lg:grid-rows-1 grid-rows-2 grid-cols-2 gap-4">
             {categories.map((item: any, i: any) => {
               return (
-                <div
+                <Card
                   key={i}
-                  className="flex flex-col justify-center items-center rounded-xl transform hover:scale-105 "
+                  className="flex flex-col justify-center items-center "
                 >
                   <div>
                     <Image
@@ -24,10 +25,10 @@ const Categories = () => {
                       width={650}
                     />
                   </div>
-                  <div className="absolute bottom-0 border rounded-b-xl w-full bg-white flex justify-center">
+                  <CardFooter className="rounded-b-xl w-full bg-white flex justify-center">
                     {item.name}
-                  </div>
-                </div>
+                  </CardFooter>
+                </Card>
               );
             })}
           </div>

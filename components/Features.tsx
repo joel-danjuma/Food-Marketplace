@@ -6,7 +6,7 @@ import { LiaShippingFastSolid } from "react-icons/lia";
 const Features = () => {
   return (
     <div>
-      <div className="w-full h-36 p-4 lg:justify-center lg:flex hidden ">
+      <div className="w-full h-[20%] p-2 lg:justify-center lg:flex hidden ">
         <div className="grid grid-flow-col grid-cols-4 gap-4 lg:text-4xl text-2xl text-center text-black justify-between w-full">
           <div className="flex flex-col items-center justify-center">
             <LiaShippingFastSolid />

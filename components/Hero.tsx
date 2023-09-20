@@ -9,9 +9,7 @@ import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/react";
 const Hero = () => {
   return (
     <section className="flex flex-col h-full w-full relative p-4 ">
-      <div
-        className={`bg-gradient-to-br from-[#a8ff78] to-[#11FFBD] w-full h-3/5 rounded-xl`}
-      >
+      <div className={` w-full h-3/5 rounded-xl`}>
         <Card className="w-full h-full bg-black bg-opacity-10">
           <div className="text-white  w-full h-full flex flex-col justify-center items-center space-y-5">
             <h1 className="lg:text-7xl md:text-5xl text-xl text-center z-10 ">
@@ -27,10 +25,10 @@ const Hero = () => {
         </Card>
       </div>
 
-      <div className="w-full h-2/5 grid grid-flow-row grid-cols-2 gap-4 pt-4 ">
+      <div className="w-full h-[30%] grid grid-flow-row grid-cols-2 gap-4 pt-4">
         {products.map((product: any, i: any) => {
           return (
-            <div
+            <Card
               key={i}
               className={`${
                 product.id == 1
@@ -55,7 +53,7 @@ const Hero = () => {
                   Shop Now
                 </a>
               </div>
-            </div>
+            </Card>
           );
         })}
       </div>
