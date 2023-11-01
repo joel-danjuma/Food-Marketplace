@@ -1,34 +1,43 @@
-import spices from "@/public/bayLeaf.svg";
-import vegetables from "@/public/tomato.svg";
-import fruit from "@/public/rasberry.svg";
-import roots from "@/public/carrot.svg";
-import mushrooms from "@/public/shroom.svg";
-import greens from "@/public/greens.svg";
+// import spices from "@/public/bayLeaf.svg";
+// import vegetables from "@/public/tomato.svg";
+// import fruit from "@/public/rasberry.svg";
+// import roots from "@/public/carrot.svg";
+// import mushrooms from "@/public/shroom.svg";
+// import greens from "@/public/greens.svg";
+
+import {
+  spices,
+  vegetables,
+  fruits,
+  mushrooms,
+  discount,
+  roots,
+} from "./products";
 
 export const categories = [
   {
-    name: "Fruits",
-    image: fruit,
+    title: "Fruits",
+    products: fruits,
   },
   {
-    name: "Vegetables",
-    image: vegetables,
+    title: "Vegetables",
+    products: vegetables,
   },
   {
-    name: "Spices",
-    image: spices,
+    title: "Spices",
+    products: spices,
   },
   {
-    name: "Roots",
-    image: roots,
+    title: "Roots",
+    products: roots,
   },
   {
-    name: "Mushrooms",
-    image: mushrooms,
+    title: "Mushrooms",
+    products: mushrooms,
   },
   {
-    name: "Discount",
-    image: greens,
+    title: "Discount",
+    products: discount,
   },
 ];
 

@@ -20,7 +20,6 @@ import {
   NavbarMenuItem,
 } from "@nextui-org/navbar";
 import { SearchIcon } from "@/components/icons";
-import { ThemeSwitch } from "@/components/theme-switch";
 
 function Navbar() {
   // const { session } = useSession();
@@ -29,7 +28,7 @@ function Navbar() {
     <Input
       aria-label="Search"
       classNames={{
-        inputWrapper: "bg-default-100",
+        inputWrapper: "bg-[#FFFFFF]",
         input: "text-sm",
       }}
       endContent={
@@ -47,16 +46,22 @@ function Navbar() {
   );
 
   return (
-    <NextUINavbar maxWidth="full" position="sticky" isBordered className="p-2">
+    <NextUINavbar
+      className="bg-[#EDEAE7]"
+      maxWidth="full"
+      position="sticky"
+      isBordered
+    >
       <NavbarContent
         className="basis-1/5 sm:basis-full relative"
         justify="start"
       >
-        {/* <NavbarMenuToggle className="lg:flex hidden" /> */}
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-2" href="/">
             <Image src={logo} alt="logo" width={12} height={12}></Image>
-            <p className="font-bold text-green-500 text-2xl">Gwaree</p>
+            <p className="font-bold text-green-500 text-2xl lg:flex hidden">
+              Gwaree
+            </p>
           </NextLink>
         </NavbarBrand>
       </NavbarContent>
@@ -66,18 +71,7 @@ function Navbar() {
         </NavbarItem>
       </NavbarContent>
 
-      {/* <NavbarContent
-      className="hidden sm:flex basis-1/5 sm:basis-full items-center"
-      justify="end"
-    >
-      <NavbarItem className="hidden sm:flex gap-2">
-        <ThemeSwitch />
-        <NavbarMenuToggle />
-      </NavbarItem>
-    </NavbarContent> */}
-
       <NavbarContent className="basis-1 pl-4" justify="end">
-        <ThemeSwitch />
         <NavbarMenuToggle />
       </NavbarContent>
 
@@ -106,112 +100,7 @@ function Navbar() {
         </div>
       </NavbarMenu>
     </NextUINavbar>
-    // <nav className="fixed w-full z-30 ">
-    //   <div className="hidden lg:flex flex-row justify-center items-center text-lg font-medium bg-[#F9F8F8] bg-opacity-95 text-green-500 w-full h-14 relative">
-    //     {/* Desktop Navigation */}
-    //     <a
-    //       href="/"
-    //       className=" absolute left-5 flex flex-row justify-between gap-4"
-    //     >
-    //       <Image src={logo} alt="logo" className="w-3 h-7 lg:hidden" />
-    //       <h1 className="text-green-500 lg:block hidden">Gwaree</h1>
-    //     </a>
-
-    //     <div>
-    //       <Link
-    //         href="/about"
-    //         className="px-2 py-2 text-sm font-medium hover:text-[#50d236] lg:px-6 md:px-3 lg:ml-auto"
-    //       >
-    //         About
-    //       </Link>
-    //       <Link
-    //         href="/shop"
-    //         className="px-2 py-2 text-sm font-medium hover:text-[#50d236] lg:px-6 md:px-3"
-    //       >
-    //         Shop
-    //       </Link>
-    //       <Link
-    //         href="/contact"
-    //         className="px-2 py-2 text-sm font-medium  hover:text-[#50d236] lg:px-6 md:px-3"
-    //       >
-    //         Contact
-    //       </Link>
-    //     </div>
-    //     {session?.user ? (
-    //       <div className="flex flex-row absolute right-5">
-    //         <SignedIn>
-    //           <UserButton afterSignOutUrl="/" />
-    //         </SignedIn>
-    //       </div>
-    //     ) : (
-    //       <div className="flex flex-row absolute right-5">
-    //         <SignInButton mode="modal">
-    //           <button className="block px-4 py-2 mt-2 text-sm  hover:text-[#50d236] focus:outline-none focus:shadow-outline md:mt-0">
-    //             Sign In
-    //           </button>
-    //         </SignInButton>
-
-    //         {/* <button className="text-green-500 hover:bg-[#50d236] hover:text-white hover:rounded-xl p-2 text-sm py-2">
-    //         Sign Up
-    //       </button> */}
-    //       </div>
-    //     )}
-    //   </div>
-
-    //   {/* Mobile Navigation */}
-
-    //   <div className="lg:hidden flex flex-row justify-between bg-[#EDEAE7] p-2 text-[#50d236] w-full h-12 relative">
-    //     <Link
-    //       href="/"
-    //       className="pl-2"
-    //       onClick={() => {
-    //         setToggleDropdown(false);
-    //       }}
-    //     >
-    //       <Image src={logo} alt="logo" className="w-3 h-7" />
-    //     </Link>
-
-    //     <button
-    //       className="text-3xl pr-2"
-    //       onClick={() => {
-    //         setToggleDropdown((prev) => !prev);
-    //       }}
-    //     >
-    //       <FiMenu />
-    //     </button>
-    //   </div>
-    //   {toggleDropdown && (
-    //     <div className="h-[70vh] w-full bg-[#EDEAE7] flex flex-col gap-2 justify-center z-20 rounded-b-xl ">
-    //       <div className="w-full h-2/4 flex flex-col gap-4 pt-4 items-center text-xl">
-    //         <Link
-    //           href="/about"
-    //           onClick={() => {
-    //             setToggleDropdown(false);
-    //           }}
-    //         >
-    //           <span>About</span>
-    //         </Link>
-    //         <Link
-    //           href="/shop"
-    //           onClick={() => {
-    //             setToggleDropdown(false);
-    //           }}
-    //         >
-    //           <span>Shop</span>
-    //         </Link>
-    //         <Link
-    //           href="/contact"
-    //           onClick={() => {
-    //             setToggleDropdown(false);
-    //           }}
-    //         >
-    //           <span>Contact</span>
-    //         </Link>
-    //       </div>
-    //     </div>
-    //   )}
-    // </nav>
   );
 }
-// className="inline-flex items-center gap-2 list-none lg:ml-auto"
+
 export default Navbar;
