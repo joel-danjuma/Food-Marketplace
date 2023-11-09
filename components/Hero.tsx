@@ -9,7 +9,7 @@ import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/react";
 const Hero = () => {
   return (
     <section>
-      <div className="flex flex-col h-screen w-full p-4 ">
+      <div className="flex flex-col h-screen max-w-[1128px] p-4 ">
         <div className={`w-full lg:h-3/5 h-[50%] rounded-xl`}>
           <Card className="w-full h-full">
             <div className="text-black bg-[#EDEAE7] w-full h-full flex flex-col justify-center items-center space-y-5">

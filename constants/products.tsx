@@ -43,20 +43,20 @@ export const fruits = [
     price: "212",
     category: "Vegetable",
   },
-  {
-    id: 7,
-    image: img,
-    title: "Green Cabbage",
-    price: "245",
-    category: "Vegetable",
-  },
-  {
-    id: 8,
-    image: img,
-    title: "Carrot",
-    price: "210",
-    category: "Root",
-  },
+  // {
+  //   id: 7,
+  //   image: img,
+  //   title: "Green Cabbage",
+  //   price: "245",
+  //   category: "Vegetable",
+  // },
+  // {
+  //   id: 8,
+  //   image: img,
+  //   title: "Carrot",
+  //   price: "210",
+  //   category: "Root",
+  // },
 ];
 
 export const vegetables = [
@@ -102,20 +102,20 @@ export const vegetables = [
     price: "212",
     category: "Vegetable",
   },
-  {
-    id: 7,
-    image: img,
-    title: "Green Cabbage",
-    price: "245",
-    category: "Vegetable",
-  },
-  {
-    id: 8,
-    image: img,
-    title: "Carrot",
-    price: "210",
-    category: "Root",
-  },
+  // {
+  //   id: 7,
+  //   image: img,
+  //   title: "Green Cabbage",
+  //   price: "245",
+  //   category: "Vegetable",
+  // },
+  // {
+  //   id: 8,
+  //   image: img,
+  //   title: "Carrot",
+  //   price: "210",
+  //   category: "Root",
+  // },
 ];
 
 export const spices = [
@@ -161,20 +161,20 @@ export const spices = [
     price: "212",
     category: "Vegetable",
   },
-  {
-    id: 7,
-    image: img,
-    title: "Green Cabbage",
-    price: "245",
-    category: "Vegetable",
-  },
-  {
-    id: 8,
-    image: img,
-    title: "Carrot",
-    price: "210",
-    category: "Root",
-  },
+  // {
+  //   id: 7,
+  //   image: img,
+  //   title: "Green Cabbage",
+  //   price: "245",
+  //   category: "Vegetable",
+  // },
+  // {
+  //   id: 8,
+  //   image: img,
+  //   title: "Carrot",
+  //   price: "210",
+  //   category: "Root",
+  // },
 ];
 
 export const roots = [
@@ -220,20 +220,20 @@ export const roots = [
     price: "212",
     category: "Vegetable",
   },
-  {
-    id: 7,
-    image: img,
-    title: "Green Cabbage",
-    price: "245",
-    category: "Vegetable",
-  },
-  {
-    id: 8,
-    image: img,
-    title: "Carrot",
-    price: "210",
-    category: "Root",
-  },
+  // {
+  //   id: 7,
+  //   image: img,
+  //   title: "Green Cabbage",
+  //   price: "245",
+  //   category: "Vegetable",
+  // },
+  // {
+  //   id: 8,
+  //   image: img,
+  //   title: "Carrot",
+  //   price: "210",
+  //   category: "Root",
+  // },
 ];
 
 export const mushrooms = [
@@ -279,20 +279,20 @@ export const mushrooms = [
     price: "212",
     category: "Vegetable",
   },
-  {
-    id: 7,
-    image: img,
-    title: "Green Cabbage",
-    price: "245",
-    category: "Vegetable",
-  },
-  {
-    id: 8,
-    image: img,
-    title: "Carrot",
-    price: "210",
-    category: "Root",
-  },
+  // {
+  //   id: 7,
+  //   image: img,
+  //   title: "Green Cabbage",
+  //   price: "245",
+  //   category: "Vegetable",
+  // },
+  // {
+  //   id: 8,
+  //   image: img,
+  //   title: "Carrot",
+  //   price: "210",
+  //   category: "Root",
+  // },
 ];
 
 export const discount = [
@@ -338,18 +338,18 @@ export const discount = [
     price: "212",
     category: "Vegetable",
   },
-  {
-    id: 7,
-    image: img,
-    title: "Green Cabbage",
-    price: "245",
-    category: "Vegetable",
-  },
-  {
-    id: 8,
-    image: img,
-    title: "Carrot",
-    price: "210",
-    category: "Root",
-  },
+  // {
+  //   id: 7,
+  //   image: img,
+  //   title: "Green Cabbage",
+  //   price: "245",
+  //   category: "Vegetable",
+  // },
+  // {
+  //   id: 8,
+  //   image: img,
+  //   title: "Carrot",
+  //   price: "210",
+  //   category: "Root",
+  // },
 ];

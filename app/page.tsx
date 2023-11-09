@@ -12,14 +12,14 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="w-full h-screen overflow-y-auto ">
+    <main className="w-full flex justify-center h-screen overflow-scrolls">
       <Hero />
       <Categories />
       {/* <About /> */}
       {/* <Features /> */}
 
       {/* <Partners /> */}
-      <Blog />
+      {/* <Blog /> */}
       <Footer />
     </main>
   );
