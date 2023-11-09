@@ -2,26 +2,29 @@ import Image from "next/image";
 import { categories } from "@/constants/categories";
 import { Card, CardFooter } from "@nextui-org/react";
 import { Category, Product } from "@/types";
+import { Divider } from "@nextui-org/react";
 
 const Categories = async () => {
   // const res = await fetch("https://654293e9ad8044116ed39ca3.mockapi.io/api/products", {cache : "no-cache"})
   // const products : Product[] = res.json()
 
   return (
-    <section className="pb-20">
-      <div className="max-w-[1128px] h-full p-4 flex flex-col justify-items-start ">
-        <h1 className="lg:text-5xl text-2xl mb-10">Shop By Category</h1>
+    <section>
+      <div className="max-w-[1440px] h-full lg:p-8 p-4 flex flex-col justify-items-center gap-8 ">
+        <h1 className="lg:text-[40px] text-[36px] font-bold text-start">
+          Shop By Category
+        </h1>
         {categories.map((category: Category, i: number) => {
           return (
-            <div key={i}>
-              <h1 className="lg:text-3-xl text-2xl font-bold text-green pt-8 pb-8">
+            <div key={i} className="space-y-8">
+              <h1 className="text-start lg:text-[36px] text-[32px] font-bold text-green ">
                 {category.title}
               </h1>
-              <div className="w-full lg:flex lg:flex-row grid grid-flow-row grid-cols-2 lg:gap-4 gap-[24px]">
+              <div className="w-full lg:flex lg:flex-row grid grid-flow-row grid-cols-2 lg:gap-8 gap-4">
                 {category.products.map((product: Product, i: number) => {
                   return (
                     <div key={i} className="w-full">
-                      <Card className="w-full h-32 p-4 bg-[#EDEAE7]">
+                      <Card className="w-full h-32 p-4 bg-[#EDEAE7] text-[16px]">
                         <span>{product.id}</span>
                         <span> {product.price}</span>
                         <span>{product.title}</span>
@@ -30,6 +33,7 @@ const Categories = async () => {
                   );
                 })}
               </div>
+              <Divider className="lg:flex hidden" />
             </div>
           );
         })}

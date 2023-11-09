@@ -47,7 +47,7 @@ function Navbar() {
 
   return (
     <NextUINavbar
-      className="bg-[#EDEAE7]"
+      className="bg-[#EDEAE7] px-4  "
       maxWidth="full"
       position="sticky"
       isBordered
@@ -56,9 +56,15 @@ function Navbar() {
         className="basis-1/5 sm:basis-full relative"
         justify="start"
       >
-        <NavbarBrand as="li" className="gap-3 max-w-fit">
-          <NextLink className="flex justify-start items-center gap-2" href="/">
-            <Image src={logo} alt="logo" width={12} height={12}></Image>
+        <NavbarBrand as="li">
+          <NextLink className="flex justify-start items-center" href="/">
+            <Image
+              src={logo}
+              alt="logo"
+              width={12}
+              height={12}
+              className="lg:hidden flex"
+            ></Image>
             <p className="font-bold text-green-500 text-2xl lg:flex hidden">
               Gwaree
             </p>
@@ -66,12 +72,16 @@ function Navbar() {
         </NavbarBrand>
       </NavbarContent>
       <NavbarContent justify="center">
-        <NavbarItem className="hidden w-[600px] lg:flex">
+        <NavbarItem className="hidden w-[620px] lg:flex">
           {searchInput}
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarContent className="basis-1 pl-4" justify="end">
+      <NavbarContent className="lg:hidden flex basis-1 " justify="center">
+        <p className="font-bold text-green-500 text-xl">Gwaree</p>
+      </NavbarContent>
+
+      <NavbarContent className=" w-full basis-1 pl-4  flex n" justify="end">
         <NavbarMenuToggle />
       </NavbarContent>
 
@@ -80,7 +90,7 @@ function Navbar() {
           {searchInput}
         </NavbarMenuItem>
 
-        <div className="mx-4 mt-2 flex flex-col gap-2">
+        <div className="mx-4 mt-4 flex flex-col gap-4">
           {siteConfig.navMenuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link
