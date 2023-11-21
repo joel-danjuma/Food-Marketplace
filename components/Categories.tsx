@@ -10,7 +10,7 @@ const Categories = async () => {
 
   return (
     <section>
-      <div className="max-w-[1440px] h-full lg:p-8 p-4 flex flex-col justify-items-center gap-8 ">
+      <div className="max-w-[1440px] h-full lg:p-8 p-4 flex flex-col justify-items-center gap-8 -mt-4 ">
         <h1 className="lg:text-[40px] text-[36px] font-bold text-start">
           Shop By Category
         </h1>
