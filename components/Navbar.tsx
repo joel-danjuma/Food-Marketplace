@@ -101,7 +101,7 @@ function Navbar() {
                     ? "danger"
                     : "foreground"
                 }
-                href="#"
+                href={item.href}
               >
                 {item.label}
               </Link>
