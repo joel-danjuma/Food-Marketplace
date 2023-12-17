@@ -64,19 +64,19 @@ import img from "@/public/img.jpg";
 
 export default function Hero() {
   return (
-    <section className="w-full py-12 flex justify-center bg-green-500">
-      <div className="container w-full max-w-[1320px]">
+    <section className="w-full py-12  flex justify-center bg-green-500">
+      <div className="w-full ">
         <div className="w-full grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
           <div className="w-full lg:order-last">
             <Image
               alt="Fresh produce"
-              className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full  lg:aspect-square"
+              className="mx-auto aspect-video overflow-hidden rounded-none object-cover sm:w-full  lg:aspect-square"
               height="600"
               src={img}
               width="600"
             />
           </div>
-          <div className="flex flex-col justify-center space-y-4 text-white">
+          <div className="flex flex-col justify-center space-y-4 text-white px-4">
             <div className="space-y-2">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl">
                 Fresh Produce Delivered To Your Doorstep
